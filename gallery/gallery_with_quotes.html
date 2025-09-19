@@ -1,0 +1,228 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Ashish Kumar Nayak</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+    <style>
+        /* ===== Sidebar Styles ===== */
+        #menu-toggle {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 100;
+            font-size: 15px;
+            cursor: pointer;
+            color: #fff;
+            background: rgba(0,0,0,0.6);
+            padding: 8px 12px;
+            border-radius: 8px;
+        }
+
+        /* Sidebar Container */
+        #sidebar {
+            position: fixed;
+            left: -260px;
+            top: 0;
+            width: 250px;
+            height: 100%;
+            background: #111;
+            color: #fff;
+            transition: 0.3s ease;
+            padding-top: 60px;
+            z-index: 1000;
+        }
+
+        #sidebar.active {
+            left: 0;
+        }
+
+        /* Close button inside sidebar */
+        #close-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 24px;
+            cursor: pointer;
+            color: #fff;
+        }
+
+        /* Sidebar menu links */
+        #sidebar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #sidebar ul li {
+            padding: 15px 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+
+        #sidebar ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            display: block;
+        }
+
+        #sidebar ul li a:hover {
+            background: rgba(255,255,255,0.1);
+            border-radius: 6px;
+        }
+
+        /* Add some spacing for the main content so it doesn't hide under toggle */
+        #main {
+            margin-top: 60px;
+        }
+
+        /* ===== Photography Quote Styling ===== */
+        #quote {
+            text-align: center;
+            font-style: italic;
+            font-size: 20px;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px 10px;
+            margin: 0;
+            border-bottom: 2px solid #444;
+        }
+
+        #quote p {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body class="is-preload">
+
+    <!-- Hamburger Icon -->
+    <div id="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Sidebar Menu -->
+    <div id="sidebar">
+        <!-- Close Button -->
+        <div id="close-btn"><i class="fas fa-times"></i></div>
+
+        <!-- Menu Links -->
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../aboutme.html">About Me</a></li>
+            <li><a href="../research.html">Research</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </div>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1><a href="gallery.html"><strong>Gallery</strong></a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#footer" class="icon solid fa-info-circle">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Photography Quote Section -->
+        <section id="quote">
+            <p>Loading quote...</p>
+        </section>
+
+        <!-- Main Content -->
+        <div id="main">
+            <article class="thumb">
+                <a href="images/fulls/01.jpg" class="image"><img src="images/thumbs/01.jpg" alt="" /></a>
+                <h2>During Aditya L1 Workshop at IITK.</h2>
+                <p>Plasma Physics Time</p>
+            </article>
+            <article class="thumb">
+                <a href="images/fulls/02.jpg" class="image"><img src="images/thumbs/02.jpg" alt="" /></a>
+                <h2>City Of Nawabs</h2>
+                <p>Lucknow ~ Bara Imambara.</p>
+            </article>
+            <article class="thumb">
+                <a href="images/fulls/03.jpg" class="image"><img src="images/thumbs/03.jpg" alt="" /></a>
+                <h2>Banaras</h2>
+                <p>Banaras ghats — where every wave of the Ganga whispers timeless prayers.</p>
+            </article>
+            <article class="thumb">
+                <a href="images/fulls/04.jpg" class="image"><img src="images/thumbs/04.jpg" alt="" /></a>
+                <h2>Ayodha Station</h2>
+                <p>At Ayodhya station, amidst the rush of trains and travelers, a little squirrel reminds us — even in life’s chaos, there’s space for stillness and wonder.</p>
+            </article>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer" class="panel">
+            <div class="inner split">
+                <div>
+                    <section>
+                        <h2>Contact Me</h2>
+                        <p>Ashish Kumar Nayak<br/>
+                        ashishknayak02@gmail.com</p>
+                    </section>
+                    <section>
+                        <h2>Follow me on ...</h2>
+                        <ul class="icons">
+                            <li><a href="mailto:ashishknayak02@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                            <li><a href="https://github.com/ashishkumar-nayak" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+                        </ul>
+                    </section>
+                    <p class="copyright">
+                        &copy; Ashish. Design: <a href="http://html5up.net">HTML5 UP</a>.
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        // Toggle sidebar open and close
+        const menuToggle = document.getElementById('menu-toggle');
+        const sidebar = document.getElementById('sidebar');
+        const closeBtn = document.getElementById('close-btn');
+
+        menuToggle.addEventListener('click', () => {
+            sidebar.classList.add('active');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            sidebar.classList.remove('active');
+        });
+
+        // ===== Photography Quotes Array =====
+        const quotes = [
+            "I love capturing beautiful moments and scenes through my camera wherever I go",
+            "A picture is a poem without words.",
+            "The camera is an instrument that teaches people how to see without a camera.",
+            "Every picture tells a story, capture the best one.",
+            "Photography freezes moments that would otherwise slip away.",
+            "In photography there is a reality so subtle that it becomes more real than reality."
+        ];
+
+        // Random quote selection
+        const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+        document.getElementById('quote').innerHTML = `<p>"${randomQuote}"</p>`;
+    </script>
+
+</body>
+</html>
